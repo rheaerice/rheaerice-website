@@ -1,0 +1,262 @@
+/*font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Lusitana', serif;*/
+
+/*index*/
+.title h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 75px;
+  margin: 170px auto;
+  margin-bottom: 0px;
+  border-bottom: 1px solid black;
+  width: 200px;
+}
+
+.custom{
+  animation: custom 12s infinite;
+  animation-delay: 1s;
+}
+@keyframes custom {
+  50% {opacity: 0;}
+}
+
+.graphic {
+  animation: graphic 12s infinite;
+  animation-delay: 2s;
+}
+@keyframes graphic {
+  50% {opacity: 0;}
+}
+
+.designs {
+  animation: designs 12s infinite;
+  animation-delay: 3s;
+}
+@keyframes designs {
+  50% {opacity: 0;}
+}
+
+.authorname h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+nav {
+  font-family: 'Lusitana', serif;
+  color: gray;
+  text-align: center;
+  width: 200px;
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  margin: 100px auto;
+  border-color: gray;
+  transition: all 2s;
+}
+.nav:hover {
+  opacity: 0.1;
+}
+.nav a:link, a:visited {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: gray;
+}
+
+p {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+/*first page*/
+.river {
+  text-align: center;
+  color: black;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+.rivers a {
+  text-decoration: none;
+}
+.water {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: url("../images/river.png");
+  animation: play 2s steps(10) infinite;
+  transition: all 1s;
+}
+.water:hover {
+  transform: rotate(10deg);
+  transform: skewX(20deg);
+  transform: scale(2,0);
+}
+@keyframes play {
+    100% { background-position: -1900px; }
+
+}
+/*elevator page*/
+.box {
+  height: 50px;
+  width: 30px;
+  margin: 10px;
+  margin-right: 500px;
+  position: relative;
+  bottom: 0px;
+  float: right;
+  background-color: #6387AD;
+  animation: box 10s infinite;
+  animation-timing-function: linear;
+  -webkit-animation: box 5s infinite;
+}
+@-webkit-keyframes box {
+  0% {opacity: 2.0;bottom: 0px;}
+  50% {opacity: 1.5; bottom: 100px;}
+  75% {opacity: 0.5;bottom: 200px;}
+  100% {opacity: 0;bottom: 400px;}
+}
+@keyframes box {
+  0% {opacity: 2.0;bottom: 0px;}
+  50% {opacity: 1.5; bottom: 100px;}
+  75% {opacity: 0.5;bottom: 200px;}
+  100% {opacity: 0;bottom: 400px;}
+}
+.elevator {
+  text-align: left;
+  padding-left: 250px;
+  margin-bottom: 50px;
+}
+.ground {
+  background-color: #394C61;
+  width: 2000px;
+  height: 400px;
+  position: absolute;
+  margin-top: -15px;
+}
+
+/*last page*/
+.cry {
+  text-align: right;
+  margin-right: 300px;
+  margin-bottom: -500px;
+  float: right;
+}
+
+.confetti span {
+  font-family: 'Lusitana', serif;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 100px;
+  margin-bottom: -400px;
+  margin-left: 100px;
+}
+.excl1 {
+  animation: excl 2s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  font-size: 180px;
+  width: 1000px;
+  color: #AD3306;
+}
+.excl2 {
+  animation: excl 1s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  font-size: 180px;
+  width: 1000px;
+  color: #AD3306;
+}
+.excl3 {
+  animation: excl 0.2s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  font-size: 180px;
+  width: 1000px;
+  color: #AD3306;
+}
+.excl4 {
+  animation: excl 0.3s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  font-size: 180px;
+  width: 1000px;
+  color: #AD3306;
+}
+.excl5 {
+  animation: excl 0.5s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  font-size: 180px;
+  width: 1000px;
+  color: #AD3306;
+}
+@keyframes excl {
+  from {
+    color:#AD3306;
+    bottom:100px;
+    right:-1200px;
+    transform: translate(50,250);
+    transform: rotate(-20deg);
+  }
+  to {
+    opacity:0.2;
+    color:#AD3306;
+    bottom:300px;
+    right: 600px;
+    transform: translate(100,600);
+    transform: rotate(70deg);
+  }
+}
+
+.semi1 {
+  animation: semi 1s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  color: #FCAE4A;
+  font-size: 160px;
+  width: 600px;
+}
+.semi2{
+  animation: semi 2s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  color: #FCAE4A;
+  font-size: 140px;
+  width: 600px;
+}
+.semi3{
+  animation: semi 3s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  color: #FCAE4A;
+  font-size: 170px;
+  width: 600px;
+}
+.semi4{
+  animation: semi 4s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  color: #FCAE4A;
+  font-size: 190px;
+  width: 600px;
+}
+.semi5{
+  animation: semi 5s linear infinite normal;
+  animation-timing-function: ease-in-out;
+  color: #FCAE4A;
+  font-size: 190px;
+  width: 600px;
+}
+@keyframes semi {
+  from {
+    color:#FCAE4A;
+    bottom:100px;
+    right:-1200px;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity:0.2;
+    color:#FCAE4A;
+    bottom:-100px;
+    right:800px;
+    font-size: 2em;
+    transform: rotate(180deg);
+  }
+}
+}
