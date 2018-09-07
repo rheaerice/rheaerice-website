@@ -5,55 +5,68 @@ font-family: 'Lusitana', serif;*/
 .title h1 {
   font-family: 'Barlow Condensed', sans-serif;
   color: black;
-  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
   font-size: 75px;
-  margin: 170px auto;
+  margin: 125px auto;
   margin-bottom: 0px;
+  padding-bottom: 50px;
   border-bottom: 1px solid black;
-  width: 200px;
+  border-width: thick;
+  width: 175px;
 }
 
-.custom{
-  animation: custom 12s infinite;
+.title1{
+  animation: title1 12s infinite;
   animation-delay: 1s;
 }
-@keyframes custom {
+@keyframes title1 {
   50% {opacity: 0;}
 }
 
-.graphic {
-  animation: graphic 12s infinite;
+.title2 {
+  animation: title2 12s infinite;
   animation-delay: 2s;
 }
-@keyframes graphic {
+@keyframes title2 {
   50% {opacity: 0;}
 }
 
-.designs {
-  animation: designs 12s infinite;
+.title3 {
+  animation: title3 12s infinite;
   animation-delay: 3s;
 }
-@keyframes designs {
+@keyframes title3 {
   50% {opacity: 0;}
 }
 
-.authorname h2 {
+.subtitle h2 {
   font-family: 'Barlow Condensed', sans-serif;
   color: black;
-  text-align: center;
-  font-size: 40px;
+  text-align: left;
+  font-size: 30px;
+  padding-top: 10px;
+  margin: auto;
+  width: 175px;
 
 }
 
-nav {
-  font-family: 'Lusitana', serif;
+h3 {
+  font-family: 'Barlow Condensed', serif;
   color: gray;
   text-align: center;
   width: 200px;
-  font-size: 12px;
+  font-size: 20px;
   border-bottom: 1px solid black;
   margin: 100px auto;
   border-color: gray;
+}
+
+nav {
+  font-family: 'Barlow Condensed', serif;
+  text-align: center;
+  width: 200px;
   transition: all 2s;
 }
 .nav:hover {
