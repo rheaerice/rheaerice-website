@@ -2,6 +2,21 @@
 font-family: 'Lusitana', serif;*/
 
 /*index*/
+
+body {
+  background-color: #FFF6E0;
+
+}
+
+.home {
+  background-image: url(../images/rhea.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 55%;
+  background-position: left 50% bottom 78%;
+
+}
+
 .title h1 {
   font-family: 'Barlow Condensed', sans-serif;
   color: black;
@@ -98,13 +113,31 @@ h6 {
 }
 
 .socialicons {
-  color: #ADAFAF;
+
   padding: 30px;
-  margin: 50px auto;
+  margin: 40px auto;
   margin-bottom: 10px;
   align-items: center;
   text-align: center;
   text-decoration: none;
+}
+
+.insta:link {
+  padding: 30px;
+  margin: 40px auto;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  border: 0px;
+  background: url(../images/insta.png);
+}
+.insta:hover{
+  height: 50px;
+  width: 50px;
+  background: url(../images/insta-hover.png);
 }
 /*first page*/
 .river {
