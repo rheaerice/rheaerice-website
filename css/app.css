@@ -4,7 +4,7 @@ font-family: 'Lusitana', serif;*/
 /*index*/
 
 body {
-  background-color: #FCF2E2;
+  background-color: #FAF7E6;
 
 }
 
@@ -68,7 +68,7 @@ body {
 
 .title h1 {
   font-family: 'Barlow Condensed', sans-serif;
-  color: black;
+  color: #d5aa46;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
@@ -76,7 +76,7 @@ body {
   margin: 125px auto;
   margin-bottom: 0px;
   padding-bottom: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #33322F;
   border-width: thick;
   width: 210px;
 }
@@ -107,7 +107,7 @@ body {
 
 .subtitle h2 {
   font-family: 'Barlow Condensed', sans-serif;
-  color: black;
+  color: #33322F;
   text-align: left;
   font-size: 36px;
   padding-top: 8px;
@@ -117,15 +117,25 @@ body {
 
 }
 
+/*end of landing page*/
+
+.menu {
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+}
+
 h3 {
   font-family: 'Barlow Condensed', serif;
-  color: gray;
+  color: #33322F;
   text-align: center;
-  width: 200px;
-  font-size: 50px;
+  width: 180px;
+  font-size: 35px;
+  padding: 0px;
   margin: 50px auto;
-  margin-bottom: 0px;
-  border-color: gray;
+  margin-bottom: 170px;
+  border-bottom: 5px solid black;
+
 }
 
 nav {
@@ -145,24 +155,37 @@ nav {
   color: gray;
 }
 
+h4  {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #33322F;
+  font-size: 40px;
+  text-align: left;
+  margin-left: 100px;
+}
+
 p {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: black;
   font-size: 20px;
+  text-align: left;
+  margin-left: 100px;
 }
+
+
+/*footer starts here*/
 
 h6 {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   text-align: center;
-  color: #ADAFAF;
+  color: #BAB8AB;
   font-size: 14px;
   margin:  auto;
   margin-top: 30px;
   margin-bottom: 45px;
 }
 
-/*test footer*/
 footer {
   margin: auto;
   text-decoration: none;
@@ -232,56 +255,11 @@ footer {
   width: 25px;
 }
 
-.footersocial li a {
-  color: #ADAFAF;
-
-}
-.footersocial li a:hover {color:#d5aa46;}
+.footersocial li a {color: #BAB8AB;}
+.footersocial li a:hover {color: #d5aa46;}
 
 
-/*
-.socialicons {
-  padding: 0px 15px;
-  margin: 40px auto;
-  margin-bottom: 10px;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-}
 
-.insta:link {
-  padding: 0px 15px;
-  margin: 40px auto;
-  margin-bottom: 10px;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-
-}
-.insta:hover{
-  height: 50px;
-  width: 50px;
-}
-
-.email:link {
-  padding: 0px 15px;
-  margin: 40px auto;
-  margin-bottom: 10px;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-
-}
-.linked:link {
-  padding: 0px 15px;
-  margin: 40px auto;
-  margin-bottom: 10px;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-
-}
-*/
 /*from animations webs
 /*first page*/
 /*from animations website
