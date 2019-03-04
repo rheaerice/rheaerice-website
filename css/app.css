@@ -1,7 +1,7 @@
 /*font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Lusitana', serif;*/
 
-/*index*/
+/*index or landing page starts here*/
 
 body {
   background-color: #FFFFFF;
@@ -38,7 +38,7 @@ body {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
-          .home {
+    .home {
         background-image: url(../images/rhea-landing.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -54,7 +54,6 @@ body {
           .home {
         background-image: none;
     }
-
 }
 
 /* Portrait phones and smaller */
@@ -63,8 +62,6 @@ body {
           .home {
         background-image: none;
     }
-
-
 
 }
 
@@ -119,7 +116,7 @@ body {
 
 }
 
-/*end of landing page*/
+/*header or main navigation starts here*/
 
 h3 {
   font-family: 'Barlow Condensed', sans-serif;
@@ -170,7 +167,7 @@ li {
   color: #d5aa46;
 }
 
-/*end of header, beginning of about*/
+/*about page starts here*/
 .about {
   position: relative;
   width: 100%; /* Maximum width */
@@ -202,7 +199,7 @@ h4  {
   text-align: left;
   margin-left: 230px;
   padding-bottom: 10px;
-  
+
 }
 
 p {
@@ -240,7 +237,69 @@ p {
   border-color: #33322F;
 }
 
+/*Portfolio starts here*/
+.portfolio {
+  margin: 10px 160px;
+}
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  opacity: 1;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.portfoliotitle {
+  padding: 15px auto;
+  margin-bottom: 6px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+div.description {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 14.5px;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 20px;
+  float: left;
+  width: 33.3333333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .responsive {
+    width: 100%;
+    margin-left: -30px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*footer starts here*/
 
