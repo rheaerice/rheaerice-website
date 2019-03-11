@@ -75,7 +75,7 @@ body {
   margin: 125px auto;
   margin-bottom: 0px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #33322F;
   border-width: thick;
   width: 210px;
 }
@@ -106,7 +106,7 @@ body {
 
 .subtitle h2 {
   font-family: 'Barlow Condensed', sans-serif;
-  color: #292929;
+  color: #33322F;
   text-align: left;
   font-size: 36px;
   padding-top: 8px;
@@ -120,7 +120,7 @@ body {
 
 h3 {
   font-family: 'Barlow Condensed', sans-serif;
-  color: #292929;
+  color: #33322F;
   text-align: center;
   font-size: 30px;
 
@@ -137,7 +137,7 @@ header {
 nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  color: #292929;
+  color: #33322F;
   text-transform: capitalize;
   font-stretch: expanded;
 }
@@ -155,7 +155,7 @@ li {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    color: #292929;
+    color: #33322F;
 
 
 }
@@ -237,30 +237,72 @@ p {
   border-color: #33322F;
 }
 
-/*Portfolio starts here*/
+/*Portfolio Gallery starts here*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 180px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 14px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*Individual Portfolio Work starts here*/
 .portfolio {
   margin: 10px 160px;
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+
 }
 
 div.gallery:hover {
-  opacity: 1;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
 }
 
-div.gallery img {
+div.gallery {
   width: 100%;
   height: auto;
 }
 
 div.portfoliotitle {
   padding: 15px auto;
-  margin-bottom: 6px;
+  margin: 30px auto;
   font-family: 'Lato', sans-serif;
-  color: black;
-  font-size: 16px;
+  color: #33322F;
+  font-size: 12px;
   font-weight: bold;
   text-align: left;
 }
