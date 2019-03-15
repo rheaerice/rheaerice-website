@@ -172,17 +172,17 @@ li {
   position: relative;
   width: 100%; /* Maximum width */
   margin: 0 auto; /* Center it */
-
 }
 
 .about .aboutlanding {
-  position: absolute; /* Position the background text */
-  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;/* At the bottom. Use top:0 to append it to the top */
   background: rgb(255, 204, 84); /* Fallback color */
   background: rgba(2255, 204, 84, 0.5); /* Black background with 0.5 opacity */
-  width: 75%; /* Full width */
-  padding: 70px 50px; /* Some padding */
-  margin: 40px auto;
+  width: 100%; /* Full width */
+  padding: 70px 200px; /* Some padding */
+  margin: 20px auto;
 
 }
 
@@ -191,11 +191,93 @@ li {
   width: 70%;
 }
 
+@media screen and (max-width: 991px) {
+  .about .aboutlanding {
+    position: absolute;
+    width: 100%;
+    padding: 50px 10px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 799px) {
+  .about .aboutlanding {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 50px 10px;
+    margin: 10px auto;
+  }
+  .about .aboutlanding h4 {
+    margin-left: 200px;
+  }
+  .about .aboutlanding p {
+    margin:0px 205px;
+  }
+  .about .aboutlanding .contact {
+    margin: 20px 205px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 700px) {
+  .about .aboutlanding {
+    position: relative;
+    width: 100%;
+    padding: 50px 10px;
+    margin: 10px auto;
+  }
+  .about .aboutlanding h4 {
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+  }
+  .about .aboutlanding p {
+    font-size: 90%;
+  }
+  .about .aboutlanding .contact {
+    font-size: 90%;
+  }
+
+}
+@media (max-width: 600px) {
+  .about .aboutlanding {
+    position: relative;
+    width: 100%;
+    padding: 50px 10px;
+    margin: 10px auto;
+  }
+  .about .aboutlanding h4 {
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  .about .aboutlanding p {
+    font-size: 90%;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    width: 75%;
+  }
+  .about .aboutlanding .contact {
+    font-size: 90%;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+}
+
 h4  {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #33322F;
-  font-size: 50px;
+  font-size: 54px;
   text-align: left;
   margin-left: 230px;
   padding-bottom: 10px;
@@ -205,7 +287,7 @@ h4  {
 p {
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 14.5px;
+  font-size: 15px;
   text-align: left;
   margin: 0px 235px;
 }
@@ -267,6 +349,9 @@ p {
     flex: 50%;
     max-width: 50%;
   }
+  .row {
+    padding: 0 90px;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -275,6 +360,9 @@ p {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+  .row {
+    padding: 0 80px;
   }
 }
 
