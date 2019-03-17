@@ -261,7 +261,7 @@ li {
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    width: 75%;
+    width: 70%;
   }
   .about .aboutlanding .contact {
     font-size: 90%;
@@ -341,6 +341,13 @@ p {
   margin-top: 14px;
   vertical-align: middle;
 }
+.column a>img{
+	opacity: 1;
+
+}
+.column a:hover>img {
+	opacity: .4;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -367,69 +374,70 @@ p {
 }
 
 /*Individual Portfolio Work starts here*/
-.portfolio {
-  margin: 10px 160px;
+.portfoliocontent {
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+.portfoliocontent img {
+  margin: 15px;
+}
+.mySlides {display:none;}
+
+.moreprojects {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  border-bottom: 1px solid #CCCCBC;
+  margin-bottom: 80px;
 }
 
-div.gallery {
+.moreprojects a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  color: #33322F;
+  text-decoration: none;
+  text-align: center;
+  margin: 70px auto;
+}
+.moreprojects a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #33322F;
+
 
 }
-
-div.gallery:hover {
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+.moreprojects a:hover{
+  color: #d5aa46;
 }
 
-div.gallery {
-  width: 100%;
-  height: auto;
+.moreprojects a:active {
+  color: #d5aa46;
 }
 
-div.portfoliotitle {
-  padding: 15px auto;
-  margin: 30px auto;
+h5 {
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 20px;
   font-family: 'Lato', sans-serif;
   color: #33322F;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   text-align: left;
 }
 div.description {
+  position: relative;
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 14.5px;
+  font-size: 14px;
   text-align: left;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  width: 70%;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 20px;
-  float: left;
-  width: 33.3333333%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .responsive {
-    width: 100%;
-    margin-left: -30px;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /*footer starts here*/
 
@@ -459,10 +467,11 @@ footer {
 
 
 .footersocial {
-  margin: auto;
+  margin: 80px auto;
   text-align: center;
   display: inline;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 .footersocial ul{
     margin: auto;
