@@ -71,7 +71,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
-  font-size: 75px;
+  font-size: 70px;
   margin: 125px auto;
   margin-bottom: 0px;
   padding-bottom: 30px;
@@ -108,7 +108,7 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   color: #33322F;
   text-align: left;
-  font-size: 36px;
+  font-size: 58px;
   padding-top: 8px;
   margin: auto;
   margin-bottom: 80px;
@@ -136,9 +136,10 @@ header {
 
 nav {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #33322F;
   text-transform: capitalize;
+  font-weight: 500;
   font-stretch: expanded;
 }
 
@@ -320,6 +321,38 @@ p {
 }
 
 /*Portfolio Gallery starts here*/
+.container {
+  position: relative;
+  width: 50%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #33322F;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -340,6 +373,7 @@ p {
 .column img {
   margin-top: 14px;
   vertical-align: middle;
+
 }
 .column a>img{
 	opacity: 1;
@@ -423,7 +457,7 @@ h5 {
   margin-left: 20px;
   font-family: 'Lato', sans-serif;
   color: #33322F;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   text-align: left;
 }
@@ -431,7 +465,7 @@ div.description {
   position: relative;
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
   margin-bottom: 80px;
   margin-left: 20px;
@@ -453,6 +487,7 @@ h6 {
 }
 
 footer {
+  color: #CCCCBC;
   margin: 80px auto;
   text-decoration: none;
   text-align: center;
