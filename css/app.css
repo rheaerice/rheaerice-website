@@ -395,6 +395,7 @@ p {
   }
 }
 
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -405,7 +406,11 @@ p {
   .row {
     padding: 0 80px;
   }
+  .portfoliocontent .description {
+    width: 100%;
+  }
 }
+
 
 /*Individual Portfolio Work starts here*/
 #myBtn {
@@ -496,7 +501,7 @@ div.description {
   text-align: left;
   margin-bottom: 80px;
   margin-left: 20px;
-  width: 60%;
+  width: 55%;
 }
 
 

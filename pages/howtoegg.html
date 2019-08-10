@@ -9,6 +9,7 @@
     <title>Rhea Erice &#124; Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
@@ -21,7 +22,7 @@
           <nav class="menunavigation cell large-12 small-12">
             <ul>
               <li><a href="about.html">A B O U T</a></li>
-              <li><a href="../index.html"><img src="../images/rhea-icon.png" alt="Rhea Erice" style="width:100px;height:100px;border:0"></a></li>
+              <li><a href="../index.html" title="Home"><img src="../images/rhea-icon.png" alt="Rhea Erice" style="width:100px;height:100px;border:0"></a></li>
               <li><a href="portfolio.html">P O R T F O L I O</a></li>
             </ul>
           </nav>
@@ -31,22 +32,54 @@
       <div class="portfoliocontent">
         <h5>How to Cook an Egg Sunny&#8211;Side Up</h5>
         <div class="description">
-          <i>Infographic Design, Isometric Grid, Illustration</i><br><br>
-          Infographic design concept to show how to cook an egg sunny&#8211;side up in less than ten steps and without the use of text for explanation.</div>
+          <i>Infographic, Isometric Grid, Illustration</i><br><br>
+          A school project to show how to cook an egg sunny&#8211;side up in less than ten steps and without depending on text for description.<br><br>
+          The challenge was to use an isometric grid as a base for all illustrations while using a limited amount of three colors. To highlight the vibrant color of an egg yolk, the design was made with complimentary colors and a neutral color to allow for smaller details.
+          Composition follows an &ldquo;S&rdquo; shaped sequence to visually guide audiences through each step in the correct order.
+        </div>
+
           <img src="../images/portfolioimages/howtoegg/howtoegg.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
-            <img src="../images/portfolioimages/howtoegg/howtoegg_skillet.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:50%">
-            <img src="../images/portfolioimages/howtoegg/howtoegg_cracked egg.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:50%">
-          <img src="../images/portfolioimages/howtoegg/howtoegg_egg carton.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:50%">
-          <img src="../images/portfolioimages/howtoegg/howtoegg_egg.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:50%">
-          <img src="../images/portfolioimages/howtoegg/howtoegg_plate.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:50%">
-          <img src="../images/portfolioimages/howtoegg/howtoegg_spatula.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:50%">
+          <div class="w3-content w3-display-container">
+
+            <img class="mySlides" src="../images/portfolioimages/howtoegg/howtoegg_skillet.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
+            <img class="mySlides" src="../images/portfolioimages/howtoegg/howtoegg_cracked egg.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
+
+          <img class="mySlides" src="../images/portfolioimages/howtoegg/howtoegg_egg.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
+          <img class="mySlides" src="../images/portfolioimages/howtoegg/howtoegg_plate.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
+
+          <img class="mySlides" src="../images/portfolioimages/howtoegg/howtoegg_egg carton.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
+          <img class="mySlides" src="../images/portfolioimages/howtoegg/howtoegg_spatula.jpg" alt="How to Cook An Egg Sunny Side Up" style="width:100%">
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+      </div>
       </div>
 
 
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
 
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
         <footer class="large-12 small-12">
           <div class="moreprojects">
-            <a href="portfolio.html" title="Portfolio">More Projects</a>
+            <div>More Projects</div>
+            <a href="thepalm.html" title="The Palm Menu">Prev </a> |
+            <a href="epub.html" title="Epub"> Next</a>
           </div>
         <div class="large-12 small-12">
             <div class="large-12 small-12 footersocial">
@@ -73,12 +106,29 @@
         </footer>
 
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
 
       </div> <!--closes the grid-x grid-padding-x -->
     </div> <!--closes the container -->
 
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
