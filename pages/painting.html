@@ -21,7 +21,7 @@
           <nav class="menunavigation cell large-12 small-12">
             <ul>
               <li><a href="about.html">A B O U T</a></li>
-              <li><a href="../index.html"><img src="../images/rhea-icon.png" alt="Rhea Erice" style="width:100px;height:100px;border:0"></a></li>
+              <li><a href="../index.html" title="Home"><img src="../images/rhea-icon.png" alt="Rhea Erice" style="width:100px;height:100px;border:0"></a></li>
               <li><a href="portfolio.html">P O R T F O L I O</a></li>
             </ul>
           </nav>
@@ -29,19 +29,32 @@
 
 
       <div class="portfoliocontent">
-        <h5>Aloha Stop</h5>
+        <h5>Traditional Painting</h5>
         <div class="description">
-          <i>Traditional Painting</i><br><br>
-          Oil paint on canvas.
+          <i>Oil and Acrylic on canvas</i><br><br>
+          Painting taught me how to use color expressively and how to create in layers from background to forefront details. <br><br><br><br>
+          <b>&ldquo;Aloha Stop&rdquo;</b>
         </div>
-        <img src="../images/portfolioimages/traditional/alohastop.jpg" alt="Oil Painting" style="width:100%">
-      </div>
+        <img src="../images/portfolioimages/traditional/alohastop.jpg" alt="Oil Painting" style="margin-top:-40px; margin-bottom:100px; width:100%">
 
+        <div class="description">
+          <b>&ldquo;A Vespa Dream&rdquo;</b>
+        </div>
+        <img src="../images/portfolioimages/traditional/vespa.jpg" alt="Oil Painting" style="margin-top:-40px; margin-bottom:100px; width:100%">
+
+        <div class="description">
+          <b>&ldquo;Extremely Blue&rdquo;</b>
+        </div>
+        <img src="../images/portfolioimages/traditional/extremelyblue.jpg" alt="Acrylic Painting" style="margin-top:-40px; width:100%">
+
+      </div>
 
 
         <footer class="large-12 small-12">
           <div class="moreprojects">
-            <a href="portfolio.html" title="Portfolio">More Projects</a>
+            <div>More Projects</div>
+            <a href="drawing.html" title="Drawings">Prev </a> |
+            <a href="tigerbook.html" title="Book Jacket"> Next</a>
           </div>
         <div class="large-12 small-12">
             <div class="large-12 small-12 footersocial">
@@ -67,13 +80,31 @@
         </div>
         </footer>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
 
 
 
       </div> <!--closes the grid-x grid-padding-x -->
     </div> <!--closes the container -->
 
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>

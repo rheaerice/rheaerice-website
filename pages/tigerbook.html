@@ -21,7 +21,7 @@
           <nav class="menunavigation cell large-12 small-12">
             <ul>
               <li><a href="about.html">A B O U T</a></li>
-              <li><a href="../index.html"><img src="../images/rhea-icon.png" alt="Rhea Erice" style="width:100px;height:100px;border:0"></a></li>
+              <li><a href="../index.html" title="Home"><img src="../images/rhea-icon.png" alt="Rhea Erice" style="width:100px;height:100px;border:0"></a></li>
               <li><a href="portfolio.html">P O R T F O L I O</a></li>
             </ul>
           </nav>
@@ -29,21 +29,21 @@
 
 
       <div class="portfoliocontent">
-        <h5>Tiger, Tiger, Burning Bright By Elna Baker</h5>
+        <h5>&ldquo;Tiger, Tiger, Burning Bright&rdquo;<br> By Elna Baker</h5>
         <div class="description">
-          <i>Packaging, Illustration, Typography</i><br><br>
-Book jacket design for an online podcast titled Tiger, Tiger, Burning Bright by Elna Baker. The story is about a
-teenager living with a secret identity; one is being a normal and quiet student in the classroom and the other is when she puts on
-her school mascot, she transforms into an extremely confident person.<br>
-I wanted to depict a tiger mascot in a classroom setting as a hint to the story plot. Using different textures and playful elements
-within the graphics is also my approach to creating a bold and fun appeal.
+          <i>Packaging, Print, Typography</i><br><br>
+Book jacket and page designs for an online podcast titled &ldquo;Tiger, Tiger, Burning Bright&rdquo; by Elna Baker. The story is about a
+teenager living with a secret double identity. In the classroom, she is a quiet and shy student. However, when she puts on
+the school mascot, she transforms into an extremely confident person.<br><br>
+The cover provides hints to the story plot while creating a bold and fun appeal that is expressive of the teenager's character. To depict a tiger mascot in a classroom setting, different textures and playful elements are used
+within the graphics.
         </div>
-        <img src="../images/portfolioimages/tigerbook/tigeropen.jpg" alt="Book Jacket Design" style="width:100%">
         <img src="../images/portfolioimages/tigerbook/tigerflat.jpg" alt="Book Jacket Design" style="width:100%">
-        <img src="../images/portfolioimages/tigerbook/tigerbook.jpg" alt="Book Jacket Design" style="border: black solid;width:100%">
-        <img src="../images/portfolioimages/tigerbook/tigerbook2.jpg" alt="Book Jacket Design" style="border: black solid;width:100%">
-        <img src="../images/portfolioimages/tigerbook/tigerbook3.jpg" alt="Book Jacket Design" style="border: black solid;width:100%">
-        <img src="../images/portfolioimages/tigerbook/tigerbook4.jpg" alt="Book Jacket Design" style="border: black solid;width:100%">
+        <img src="../images/portfolioimages/tigerbook/tigeropen.jpg" alt="Book Jacket Design" style="width:100%">
+        <img src="../images/portfolioimages/tigerbook/tigerbook.jpg" alt="Book Jacket Design" style="border: grey solid 1px;width:100%">
+        <img src="../images/portfolioimages/tigerbook/tigerbook2.jpg" alt="Book Jacket Design" style="border: grey solid 1px;width:80%">
+        <img src="../images/portfolioimages/tigerbook/tigerbook3.jpg" alt="Book Jacket Design" style="border: grey solid 1px;width:80%">
+        <img src="../images/portfolioimages/tigerbook/tigerbook4.jpg" alt="Book Jacket Design" style="border: grey solid 1px;width:80%">
 
 
 
@@ -53,7 +53,9 @@ within the graphics is also my approach to creating a bold and fun appeal.
 
         <footer class="large-12 small-12">
           <div class="moreprojects">
-            <a href="portfolio.html" title="Portfolio">More Projects</a>
+            <div>More Projects</div>
+            <a href="painting.html" title="Paintings">Prev </a> |
+            <a href="peermentors.html" title="Peer Mentor Services"> Next</a>
           </div>
         <div class="large-12 small-12">
             <div class="large-12 small-12 footersocial">
@@ -80,12 +82,30 @@ within the graphics is also my approach to creating a bold and fun appeal.
         </footer>
 
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
 
 
       </div> <!--closes the grid-x grid-padding-x -->
     </div> <!--closes the container -->
 
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
