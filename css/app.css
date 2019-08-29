@@ -3,6 +3,14 @@ font-family: 'Lusitana', serif;*/
 
 /*index or landing page starts here*/
 
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+
 body {
   background-color: #FFFFFF;
 
@@ -71,48 +79,57 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
-  font-size: 70px;
-  margin: 125px auto;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #33322F;
-  border-width: thick;
-  width: 210px;
+  font-size: 65px;
+  margin: auto;
+  width: 500px;
 }
 
 .title1{
-  animation: title1 12s infinite;
-  animation-delay: 1s;
+  animation: title1 5s ease 1s 1 normal forwards;
+  opacity: 0;
 }
 @keyframes title1 {
-  50% {opacity: 0;}
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
 }
 
 .title2 {
-  animation: title2 12s infinite;
-  animation-delay: 2s;
+  animation: title2 5s ease 2s 1 normal forwards;
+  opacity: 0;
 }
 @keyframes title2 {
-  50% {opacity: 0;}
+  from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 .title3 {
-  animation: title3 12s infinite;
-  animation-delay: 3s;
+  animation: title3 5s ease 3s 1 normal forwards;
+  opacity: 0;
 }
 @keyframes title3 {
-  50% {opacity: 0;}
+  from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 .subtitle h2 {
   font-family: 'Barlow Condensed', sans-serif;
   color: #33322F;
   text-align: left;
-  font-size: 58px;
-  padding-top: 8px;
-  margin: auto;
-  margin-bottom: 80px;
-  width: 210px;
+  font-size: 35px;
+  margin:5px auto;
+  width: 500px;
 
 }
 
@@ -130,9 +147,11 @@ header {
   text-decoration: none;
   text-align: center;
   margin: 80px auto;
+  margin-bottom: 0px;
   width: 70%;
-  border-bottom: 1px solid #CCCCBC;
+  background-color: #FFFFFF;
 }
+
 
 nav {
   font-family: 'Open Sans', sans-serif;
@@ -151,6 +170,15 @@ li {
 }
 
 
+.menunavigation {
+  text-decoration: none;
+  text-align: center;
+  margin:auto;
+  width: 100%;
+  background-color: #FFFFFF;
+  /*border-bottom: 1px solid #CCCCBC;*/
+
+}
 
 .menunavigation a:link, a:visited {
     text-align: center;
@@ -320,6 +348,33 @@ p {
   border-color: #33322F;
 }
 
+.submit {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px;
+}
+
+.submit a:link, a:visited {
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  color: #33322F;
+  font-size: 16px;
+  border-radius: 5px;
+  border-color: #33322F;
+  border: solid;
+  border-width: 2px;
+  margin-top: 10px;
+}
+.submit a:hover, a:active{
+  background-color: #33322F;
+  color: rgb(255, 204, 84);
+  border-width: 2px;
+  border: solid;
+  border-color: #33322F;
+}
+
 /*Portfolio Gallery starts here*/
 .container {
   position: relative;
@@ -353,13 +408,13 @@ p {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.row {
+
+.content .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 180px;
-
 }
 
 /* Create four equal columns that sits next to each other */
@@ -454,8 +509,8 @@ p {
   text-align: center;
   margin: auto;
   width: 70%;
-  border-bottom: 1px solid #CCCCBC;
-  margin-bottom: 80px;
+  /*border-bottom: 1px solid #CCCCBC;*/
+  margin-bottom: 50px;
 }
 
 .moreprojects a{
@@ -464,7 +519,7 @@ p {
   text-transform: lowercase;
   color: #33322F;
   text-align: center;
-  margin: 70px auto;
+  margin: 20px auto;
   margin-top: 10px;
 }
 .moreprojects a:link, a:visited {
@@ -514,7 +569,7 @@ h6 {
   color: #CCCCBC;
   font-size: 14px;
   margin:  auto;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 45px;
 }
 
