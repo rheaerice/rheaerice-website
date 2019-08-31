@@ -21,8 +21,8 @@ body {
   background-image: url(../images/rhea-landing.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 60%;
-  background-position: left 50% bottom 78%;
+  background-size: 38%;
+  background-position: left 75% bottom 85%;
 }
 }
 
@@ -75,17 +75,17 @@ body {
 
 .title h1 {
   font-family: 'Barlow Condensed', sans-serif;
-  color: #d5aa46; /*if you want gray : 8F8F85*/
+  color: rgb(255, 204, 84);/*if you want gray : 8F8F85*/
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
-  font-size: 65px;
+  font-size: 67px;
   margin: auto;
   width: 500px;
 }
 
 .title1{
-  animation: title1 5s ease 1s 1 normal forwards;
+  animation: title1 5s ease 3s 1 normal forwards;
   opacity: 0;
 }
 @keyframes title1 {
@@ -98,7 +98,7 @@ body {
 }
 
 .title2 {
-  animation: title2 5s ease 2s 1 normal forwards;
+  animation: title2 5s ease 3.8s 1 normal forwards;
   opacity: 0;
 }
 @keyframes title2 {
@@ -111,7 +111,7 @@ body {
 }
 
 .title3 {
-  animation: title3 5s ease 3s 1 normal forwards;
+  animation: title3 5s ease 4.6s 1 normal forwards;
   opacity: 0;
 }
 @keyframes title3 {
@@ -127,7 +127,7 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   color: #33322F;
   text-align: left;
-  font-size: 35px;
+  font-size: 40px;
   margin:5px auto;
   width: 500px;
 
@@ -146,10 +146,11 @@ h3 {
 header {
   text-decoration: none;
   text-align: center;
-  margin: 80px auto;
+  margin:auto;
   margin-bottom: 0px;
-  width: 70%;
-  background-color: #FFFFFF;
+  width: 100%;
+  border-bottom: 1px solid #CCCCBC;
+
 }
 
 
@@ -166,7 +167,7 @@ nav {
 li {
   display: inline-block;
   padding: 0px;
-  margin: 10px 27px 70px 27px;
+  margin: 5px 27px 0px 27px;
 }
 
 
@@ -176,8 +177,6 @@ li {
   margin:auto;
   width: 100%;
   background-color: #FFFFFF;
-  /*border-bottom: 1px solid #CCCCBC;*/
-
 }
 
 .menunavigation a:link, a:visited {
@@ -189,12 +188,13 @@ li {
 
 }
 .menunavigation a:hover{
-  color: #d5aa46;
+  color: rgb(255, 204, 84);
 }
 
 .menunavigation a:active {
-  color: #d5aa46;
+  color: rgb(255, 204, 84);
 }
+
 
 /*about page starts here*/
 .about {
@@ -330,22 +330,20 @@ p {
 }
 
 .contact a:link, a:visited {
-  padding: 10px 20px;
+  padding: 12px 30px;
   font-family: 'Lato', sans-serif;
-  color: #33322F;
-  font-size: 14.5px;
-  border-radius: 5px;
-  border-color: #33322F;
-  border: solid;
-  border-width: 2px;
-  margin-top: 10px;
-}
-.contact a:hover, a:active{
   background-color: #33322F;
   color: rgb(255, 204, 84);
+  font-size: 14.5px;
+  border-radius: 5px;
+  border-width: 2px;
+  margin-top: 12px;
+}
+.contact a:hover, a:active{
+  color: #33322F;
   border-width: 2px;
   border: solid;
-  border-color: #33322F;
+  background-color: inherit;
 }
 
 .submit {
@@ -357,22 +355,20 @@ p {
 }
 
 .submit a:link, a:visited {
-  padding: 10px 20px;
+  padding: 12px 40px;
   font-family: 'Lato', sans-serif;
-  color: #33322F;
-  font-size: 16px;
-  border-radius: 5px;
-  border-color: #33322F;
-  border: solid;
-  border-width: 2px;
-  margin-top: 10px;
-}
-.submit a:hover, a:active{
   background-color: #33322F;
   color: rgb(255, 204, 84);
+  font-size: 16px;
+  border-radius: 5px;
+  border-width: 2px;
+  margin-top: 12px;
+}
+.submit a:hover, a:active {
+  color: #33322F;
   border-width: 2px;
   border: solid;
-  border-color: #33322F;
+  background-color: inherit;
 }
 
 /*Portfolio Gallery starts here*/
@@ -496,6 +492,7 @@ p {
   text-align: center;
   margin: auto;
   width: 70%;
+  margin-top: 80px;
 }
 .portfoliocontent img {
   margin: 15px;
@@ -508,9 +505,10 @@ p {
   display: inline-block;
   text-align: center;
   margin: auto;
-  width: 70%;
-  /*border-bottom: 1px solid #CCCCBC;*/
+  width: 100%;
+  border-bottom: 1px solid #CCCCBC;
   margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .moreprojects a{
@@ -531,11 +529,11 @@ p {
 
 }
 .moreprojects a:hover{
-  color: #d5aa46;
+  color: rgb(255, 204, 84);
 }
 
 .moreprojects a:active {
-  color: #d5aa46;
+  color: rgb(255, 204, 84);
 }
 
 h5 {
@@ -584,6 +582,7 @@ footer {
    right: 0;
    width: 100%;
    height: 50px;
+
 }
 
 
@@ -593,6 +592,7 @@ footer {
   text-align: center;
   display: inline;
   text-decoration: none;
+
 }
 
 .footersocial ul{
@@ -651,4 +651,5 @@ footer {
 }
 
 .footersocial li a {color: #CCCCBC;} /*C2C2C2*/
-.footersocial li a:hover {color: #d5aa46;}
+.footersocial li a:hover {color: rgb(255, 204, 84);
+}
