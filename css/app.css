@@ -2,6 +2,9 @@
 font-family: 'Lusitana', serif;*/
 
 /*index or landing page starts here*/
+html {
+  scroll-behavior: smooth;
+}
 
 div.sticky {
   position: -webkit-sticky;
@@ -85,7 +88,7 @@ body {
 }
 
 .title1{
-  animation: title1 5s ease 3s 1 normal forwards;
+  animation: title1 5s ease 1s 1 normal forwards;
   opacity: 0;
 }
 @keyframes title1 {
@@ -98,7 +101,7 @@ body {
 }
 
 .title2 {
-  animation: title2 5s ease 3.8s 1 normal forwards;
+  animation: title2 5s ease 1.8s 1 normal forwards;
   opacity: 0;
 }
 @keyframes title2 {
@@ -111,7 +114,7 @@ body {
 }
 
 .title3 {
-  animation: title3 5s ease 4.6s 1 normal forwards;
+  animation: title3 5s ease 2.6s 1 normal forwards;
   opacity: 0;
 }
 @keyframes title3 {
@@ -167,7 +170,7 @@ nav {
 li {
   display: inline-block;
   padding: 0px;
-  margin: 5px 27px 0px 27px;
+  margin: 8px 27px 0px 27px;
 }
 
 
@@ -204,21 +207,33 @@ li {
 }
 
 .about .aboutlanding {
-  position: -webkit-sticky;
+  /*position: -webkit-sticky;
   position: sticky;
   top: 0;/* At the bottom. Use top:0 to append it to the top */
   background: rgb(255, 204, 84); /* Fallback color */
-  background: rgba(2255, 204, 84, 0.5); /* Black background with 0.5 opacity */
-  width: 100%; /* Full width */
-  padding: 70px 200px; /* Some padding */
-  margin: 20px auto;
+  /*background: rgba(2255, 204, 84, 0.5); /* Black background with 0.5 opacity */
+  position: absolute;
+  z-index: 1;
 
 }
+.aboutlanding {
+  background: rgb(255, 204, 84);
+  width: 80%;
+  margin: 80px auto;
+  padding: 40px 20px;
+    border-radius: 2px;
+}
+
 
 .portrait {
-  margin: auto;
-  width: 70%;
+  margin: 20px auto;
+  width: 100%;
+  border-bottom: 1px solid #CCCCBC;
+  padding: 30px;
+  text-align: center;
 }
+
+
 
 @media screen and (max-width: 991px) {
   .about .aboutlanding {
@@ -231,8 +246,7 @@ li {
 
 @media (max-width: 799px) {
   .about .aboutlanding {
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0;
     width: 100%;
     padding: 50px 10px;
@@ -335,7 +349,7 @@ p {
   background-color: #33322F;
   color: rgb(255, 204, 84);
   font-size: 14.5px;
-  border-radius: 5px;
+  border-radius: 3px;
   border-width: 2px;
   margin-top: 12px;
 }
@@ -360,13 +374,14 @@ p {
   background-color: #33322F;
   color: rgb(255, 204, 84);
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 3px;
   border-width: 2px;
   margin-top: 12px;
 }
 .submit a:hover, a:active {
   color: #33322F;
   border-width: 2px;
+  border-radius: 3px;
   border: solid;
   background-color: inherit;
 }
@@ -415,16 +430,16 @@ p {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
   padding: 0 8px;
 }
 
 .column img {
   margin-top: 14px;
   vertical-align: middle;
-
+  border-radius: 2px;
 }
 .column a>img{
 	opacity: 1;

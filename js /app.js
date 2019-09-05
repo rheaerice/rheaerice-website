@@ -1,54 +1,47 @@
+$(document).ready(function() {
 
-$(document).ready(function () {
-    // Read the cookie and if it's defined scroll to id
-    var scroll = $.cookie('scroll');
-    if(scroll){
-        scrollToID(scroll, 1000);
-        $.removeCookie('scroll');
-    }
-
-    // Handle event onclick, setting the cookie when the href != #
-    $('.nav a').click(function (e) {
-        e.preventDefault();
-        var id = $(this).data('id');
-        var href = $(this).attr('href');
-        if(href === '#'){
-            scrollToID(id, 1000);
-        }else{
-            $.cookie('scroll', id);
-            window.location.href = href;
+    var scrollnow = function(e) {
+        // if scrollnow()-function was triggered by an event
+        if (e) {
+            e.preventDefault();
+            var target = this.hash;
         }
-    });
+        // else it was called when page with a #hash was loaded
+        else {
+            var target = location.hash;
+        }
 
-    // scrollToID function
-    function scrollToID(id, speed) {
-        var offSet = 70;
-        var obj = $('#' + id).offset();
-        var targetOffset = obj.top - offSet;
-        $('html,body').animate({ scrollTop: targetOffset }, speed);
-    }
+        // same page scroll
+        $.smoothScroll({
+            offset: -120,
+            scrollTarget: target
+        });
+    };
+
+    // if page has a #hash
+   if (location.hash) {
+       $('html, body').scrollTop(0).show();
+       // smooth-scroll to hash
+       scrollnow();
+   }
+
+   // for each <a>-element that contains a "/" and a "#"
+   $('a[href*="/"][href*=#]').each(function(){
+       // if the pathname of the href references the same page
+       if (this.pathname.replace(/^\//,'') == location.pathname.replace(/^\//,'') && this.hostname == location.hostname) {
+           // only keep the hash, i.e. do not keep the pathname
+           $(this).attr("href", this.hash);
+       }
+   });
+
+   // select all href-elements that start with #
+   // including the ones that were stripped by their pathname just above
+   $('a[href^=#]:not([href=#])').click(scrollnow);
+
 });
-
-// Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+$(function(){
+    $('html, body').animate({
+        scrollTop: $('.hash').offset().top
+    }, 2000);
+    return false;
 });
