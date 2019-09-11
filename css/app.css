@@ -70,9 +70,7 @@ body {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
-          .home {
-        background-image: none;
-    }
+
 
 }
 
@@ -85,6 +83,7 @@ body {
   font-size: 67px;
   margin: auto;
   width: 500px;
+
 }
 
 .title1{
@@ -313,7 +312,23 @@ li {
     text-align: center;
     padding-top: 10px;
   }
-
+  .menunavigation {
+    width: 100%;
+  }
+  .menunavigation ul li {
+    width: 50%;
+  }
+  .subtitle h2 {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .title h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    padding: 0px 10px;
+  }
 }
 
 h4  {
@@ -387,9 +402,10 @@ p {
 }
 
 /*Portfolio Gallery starts here*/
+
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 .overlay {
   position: absolute;
@@ -425,7 +441,17 @@ p {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 180px;
+  padding: 0 120px;
+
+}
+.scroll {
+  color:#CCCCBC;
+  text-align:left;
+  margin:auto;
+  padding:10px 15px 15px 4px;
+  margin-top:30px;
+  margin-bottom:140px;
+  width: 500px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -457,25 +483,38 @@ p {
     max-width: 50%;
   }
   .row {
-    padding: 0 90px;
+    padding: 0 30px;
   }
 }
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+ .content {
+   width: 100%;
+ }
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
   .row {
-    padding: 0 80px;
+    padding: 0 20px;
+    width: 100%;
   }
+
   .portfoliocontent .description {
     width: 100%;
   }
+  .content .row {
+    padding: 0 50px;
+  }
+  .scroll {
+    text-align:center;
+  }
+
 }
+
 
 
 /*Individual Portfolio Work starts here*/

@@ -1,3 +1,4 @@
+<!DOCTYPE html>.
 $(document).ready(function() {
 
     var scrollnow = function(e) {
@@ -44,4 +45,4 @@ $(function(){
         scrollTop: $('.hash').offset().top
     }, 2000);
     return false;
-});
+})
